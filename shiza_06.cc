@@ -24,7 +24,17 @@
  * вычислить foo_function, а инициализировать pacifier нулем.
  */
 
-int foo_function() {return 42;}
+#include <iostream>
+
+using std::cout;
+using std::endl;
+
+void foo_function()
+{
+  cout
+    << "\nW: ... and vote and decision.\n"
+    << endl;
+}
 
 static int pacifier
   =(foo_function(),0);
